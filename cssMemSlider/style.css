@@ -35,10 +35,13 @@ body {
     width: 100%;
     transition: 1s all;
     align-items: flex-start;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    border-radius: .3rem;
-    margin-bottom: 1.2rem;
+    border-radius: .5rem;
+}
+
+img {
+    display: block;
 }
 
 .image {
@@ -92,6 +95,7 @@ input {
 .slider__visible_controls {
     order: 2;
     display: flex;
+    margin-top: 1.2rem;
 }
 
 .control-container {
@@ -152,3 +156,23 @@ input {
     margin-top: -3.6rem;
 }
 
+@media all and (max-width: 767px) {
+    .slider {
+        margin-top: 1rem;
+    }
+    .wrapper {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .slider__visible_controls {
+        order: 0;
+        padding-bottom: 1rem;
+    }
+
+    .slider__description {
+        align-self: flex-start;
+        height: 1.7rem;
+    }
+
+}
