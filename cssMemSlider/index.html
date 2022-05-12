@@ -10,31 +10,31 @@
   <body>
     <section class="slider">
       <div class="wrapper">
-        <div class="slider__images">
-          <div class="slider__images_content">
-            <img src="./images/image-1.jpg" alt="" />
-            <img src="./images/image-2.jpg" alt="" />
-            <img src="./images/image-3.jpg" alt="" />
-            <img src="./images/image-4.jpg" alt="" />
-          </div>
-        </div>
-        <div class="slider__controls">
-          <input
+        <input
             type="radio"
-            name="first-image-control"
+            name="controls"
+            id="selector-1"
             value=""
             checked="checked"
-          />
-          <input type="radio" name="second-image-control" value="" />
-          <input type="radio" name="third-image-control" value="" />
-          <input type="radio" name="fourth-image-control" value="" />
+        />
+        <input type="radio" name="controls" id="selector-2" value="" />
+        <input type="radio" name="controls" id="selector-3" value="" />
+        <input type="radio" name="controls" id="selector-4" value="" />
+        <div class="slider__images">
+           <img src="./images/image-1.jpg" alt="" class="image" />
+        </div>
+        <div class="slider__visible_controls">
+          <label for="selector-1"><div class="control-container"><div class="control control-1"></div></div></label>
+          <label for="selector-2"><div class="control-container"><div class="control control-2"></div></div></label>
+          <label for="selector-3"><div class="control-container"><div class="control control-3"></div></div></label>
+          <label for="selector-4"><div class="control-container"><div class="control control-4"></div></div></label>
         </div>
         <div class="slider__description">
           <div class="slider__description_content">
-            <p>I'm best of the best</p>
-            <p>I'm best of the best</p>
-            <p>I'm best of the best</p>
-            <p>I'm best of the best</p>
+            <p class="description">Прочитал ТЗ</p>
+            <p class="description">Первый коммит</p>
+            <p class="description">Отладка</p>
+            <p class="description">Деплой!</p>
           </div>
         </div>
       </div>
