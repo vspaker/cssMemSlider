@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 75vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -163,6 +163,7 @@ input {
     .wrapper {
         flex-direction: column;
         flex-wrap: nowrap;
+        width: 90vw;
     }
 
     .slider__visible_controls {
