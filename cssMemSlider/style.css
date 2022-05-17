@@ -52,6 +52,8 @@ img {
 
 input {
    visibility: hidden;
+   width: 0em;
+   height: 0em;
 }
 
 .slider__description {
